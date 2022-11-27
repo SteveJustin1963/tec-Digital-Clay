@@ -6,6 +6,7 @@ see also https://github.com/SteveJustin1963/tec-Haptic
 
 ## Ref
 - https://en.wikipedia.org/wiki/Digital_sculpting
+- https://en.wikipedia.org/wiki/Haptic_technology
 - https://imdl.gatech.edu/currentproj/Digital_Clay/Digital_Clay.html
 - https://www.sculpteo.com/blog/2019/06/12/what-is-digital-sculpting/
 - https://www.3dsystems.com/haptics-devices/touch
