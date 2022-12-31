@@ -33,7 +33,11 @@ This code assumes that the haptic device has been properly initialized and that 
 
 Keep in mind that this is just a very basic example, and in practice you would likely want to use more advanced techniques to control the haptic device, such as using haptic rendering algorithms to simulate the properties of different materials, or using touch or gesture input from the user to trigger different haptic effects.
 
+## code to convert thoses forces to ADC ```adc1.c```
+This code first initializes the haptic device and sets the forces to be applied to each finger. It then updates the forces on the device using the ```update()``` function. Next, it converts the forces to ADC code using the following formula: ```adc_code = (int)(force * ADC_RANGE / (1 << ADC_RESOLUTION)); ```
+This formula scales the force value to the range of the ADC (ADC_RANGE) and maps it to the ADC resolution (ADC_RESOLUTION). The 1 << ADC_RESOLUTION term is used to shift the 1 left by the number of bits in the ADC resolution (e.g. if the ADC has a resolution of 12 bits, the term would be 1 << 12 = 4096). The resulting ADC code is then stored in a separate variable for each finger.
 
+Keep in mind that this is just an example, and in practice you may need to consider other factors such as the specific ADC hardware you are using and the constraints of your haptic device. You may also need to adjust the formula or use additional techniques to ensure that the ADC code accurately reflects the forces applied to the haptic device.
 
 ## Ref
 - https://github.com/SteveJustin1963/tec-Haptic
