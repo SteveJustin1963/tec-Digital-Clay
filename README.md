@@ -27,7 +27,7 @@ Haptic devices are used in a variety of applications, including virtual reality,
 
 There are many different haptic devices available on the market, ranging from low-cost devices for consumer applications to high-end devices for research and industrial use. Some examples of haptic devices include the PHANToM haptic device, the Novint Falcon, the HaptX gloves, and the HaptX exoskeleton.
 
-## example of C code that could be used to control a haptic device that is connected to the user's five fingers: ```hap1.c```
+## code haptic device to five fingers: ```hap1.c```
 
 This code assumes that the haptic device has been properly initialized and that there are constants or enumerations defined for the different fingers (THUMB, INDEX, MIDDLE, RING, PINKY). The setForce() function is used to set the force to be applied to each finger, and the update() function is used to update the forces on the device.
 
